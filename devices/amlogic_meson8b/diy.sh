@@ -16,3 +16,5 @@ sed -i "s/wpad-openssl/wpad-basic-mbedtls/" target/linux/amlogic/image/Makefile
 
 sed -i "s/neon-vfpv4/vfpv4/" target/linux/amlogic/meson8b/target.mk
 
+rm -rf package/feeds/routing/batman-adv
+
