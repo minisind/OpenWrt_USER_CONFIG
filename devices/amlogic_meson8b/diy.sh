@@ -14,3 +14,5 @@ git_clone_path master https://github.com/rmoyulong/OneCloud_OpenWrt lede6.6/targ
 
 sed -i "s/wpad-openssl/wpad-basic-mbedtls/" target/linux/amlogic/image/Makefile
 
+sed i "s/neon-vfpv4/vfpv4/" target/linux/amlogic/meson8b/target.mk
+
