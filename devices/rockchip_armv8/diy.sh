@@ -14,8 +14,6 @@ wget -N https://github.com/openwrt/openwrt/raw/refs/heads/openwrt-24.10/target/l
 
 wget -N https://github.com/coolsnowwolf/lede/raw/master/include/kernel-6.6 -P include/
 
-rm -rf target/linux/generic/hack-6.6/{410-block-fit-partition-parser.patch,724-net-phy-aquantia*,720-net-phy-add-aqr-phys.patch,767-net-phy-realtek*}
-
 sed -i "/KernelPackage,ptp/d" package/kernel/linux/modules/other.mk
 
 sed -i -e "s/configs\/dilusense-\(.*-.*_defconfig\)/configs\/\1/" \
