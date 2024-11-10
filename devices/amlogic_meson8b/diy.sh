@@ -10,7 +10,8 @@ SHELL_FOLDER=$(dirname $(readlink -f "$0"))
 
 #git_clone_path c640f7b93736621b4d56627e4f6ab824093f9c3d https://github.com/openwrt/openwrt package/kernel/mac80211
 
-git_clone_path master https://github.com/lxiaya/openwrt-onecloud target/linux/amlogic
+git_clone_path main https://github.com/lxiaya/openwrt-onecloud target/linux/amlogic
+git_clone_path main https://github.com/lxiaya/openwrt-onecloud mv target/linux/amlogic/image
 
 sed -i "s/wpad-openssl/wpad-basic-mbedtls/" target/linux/amlogic/image/Makefile
 
